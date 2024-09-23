@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+    --azul: #170c7a;
+    --amarelo: #fbff00;
+    --ciano:#25f6fd;
+    --preto: #000000;
+    --branco: #ffffff;
+    --cinza: #d4d4d4;
+    --cinzaescuro: #4F4F4F;
+
+    --modalidade1: #1b9db4;
+    --fontemodalidade1: #ffffff;
+
+    --modalidade2: #3CB371;
+    --fontemodalidade2: #000000;
+
+    --modalidade3: #fbff00;
+    --fontemodalidade3: #000000;
+
+
+    --modalidade4: #dd59d2;
+    --fontemodalidade2: #ffffff;
+
+    --modalidade5: #cf814c;
+    --fontemodalidade5: #ffffff;
+
+    --modalidade6:#483D8B;
+    --fontemodalidade6: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--cinza);
+}
+
+header {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 15px;
+    height: 15vh;
+    background-color: #170c7a;
+    color: var(--preto);
+    border-bottom: 3px solid var(--preto);
+}
+
+
+#titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 10px;
+    color: var(--amarelo);
+
+
+}
+
+#titulo i {
+    font-size: 50px;
+    transition: transform 0.5s ease;
+    color: rgb(255, 255, 255);
+
+}
+
+#titulo p {
+    font-size: 50px;
+    color: var(--ciano);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+#navegacao nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--ciano);
+}
+
+#navegacao nav a {
+    font-size: 20px;
+    text-decoration: none;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 1s ease;
+    color: var(--ciano);
+
+}
+
+#navegacao nav a:hover {
+    border-top: 3px solid var(--branco);
+    border-bottom: 3px solid var(--branco);
+    transform: translateY(-10px);
+
+}
+
+
+#login button {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--ciano);
+    transition: all 1s ease;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+#login button:hover {
+    background-color: var(--branco);
+    color: var(--preto);
+
+}
+
+#apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px solid var(--preto);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    opacity: 0.8;
+
+}
+
+#apresentacao:hover {
+    background-color: var(--cinza);
+    opacity: 1;
+}
+
+#apresentacao h1 {
+    font-family: "Pacifico", system-ui;
+    color: #170c7a;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    text-shadow: 5px 5px 5px rgb(131, 128, 128);
+    margin-bottom: 40px;
+}
+
+#apresentacao p {
+    color: var(--preto);
+}
+
+#conteudo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#imagem img {
+    width: 300px;
+    transition: all 1s ease;
+}
+
+#imagem img:hover {
+    scale: 1.3;
+    transform: translateY(-20px) translateX(-20px);
+    filter: saturate(2);
+}
+
+#texto p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    transition: all 1s ease;
+
+}
+
+#texto p:hover {
+
+    transform: translateY(-10px);
+    font-weight: 700;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--branco);
+    padding: 20px 30px;
+}
+
+.cards:hover {
+    background-color: var(--cinza);
+}
+
+.cards h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    text-shadow: 5px 5px 5px var(--cinza);
+
+
+}
+
+.grupo-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+
+}
+
+.card {
+    border: 3px solid var(--preto);
+    box-shadow: 5px 5px 5px var(--cinza);
+    width: 15%;
+    height: 500px;
+    background-color: var(--branco);
+    transition: all 0.5s ease;
+    opacity: 0.8;
+
+}
+
+.card:hover {
+    opacity: 1;
+    background-color: var(--cinza);
+}
+
+.card img {
+    width: 100%;
+    height: 250px;
+
+}
+
+.card img:hover {
+    filter: saturate(2);
+   
+}
+
+.card-info {
+    margin: 20px 10px;
+}
+
+.card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    
+
+}
+
+.card p {
+    height: 100px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.card-button {
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-button button {
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: var(--branco);
+    border: 2px solid var(--preto);
+    cursor: pointer;
+    transition: all 1s ease;
+
+}
+
+.card-button button:hover {
+    background-color: var(--preto);
+    color: var(--branco);
+
+}
+
+
+#logotipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: var(--amarelo);
+    font-size: 60px;
+
+}
+
+#logotipo p {
+    font-size: 30px;
+    color: var(--branco)
+}
+
+footer {
+    background-color: #170c7a;
+    display: flex;
+    text-decoration: none;
+    color: var(--cinza);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap: 20px;
+    height: 120px;
+}
+
+.legenda {
+    font-size: 15px;
+    color: var(--ciano);
+}
+
+
+#texto {
+    font-size: 15px;
+    color: var(--branco);
+    margin-bottom: 5px;
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+
+#contato p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: var(--branco);
+
+}
+
+#contato a {
+    color: var(--ciano);
+}
+
+#redessociais {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+    color: var(--ciano);
+
+}
+
+#redessociais i {
+    font-size: 30px;
+    color: var(--ciano)
+}
+
+
+.modalidades {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.modalidades-texto {
+    display: flex;
+    flex-direction: column;
+}
+
+.modalidades-texto h2 {
+    text-align: left;
+    font-size: 40px;
+    text-shadow: 3px 3px 3px var(--cinzaescuro);
+    margin-bottom: 50px;
+}
+
+.modalidades-texto h3 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+}
+
+.modalidades-texto p {
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+.modalidades-texto ol {
+    margin-left: 80px;
+    margin-bottom: 60px;
+}
+
+.modalidades-texto ol li {
+    line-height: 1.5;
+}
+
+.modalidades-texto button {
+    height: 50px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    background-color: var(--fontemodalidade1);
+    border: 3px solid var(--fontemodalidade1);
+    border-radius: 8px;
+    transition: all 1s ease;
+}
+
+.modalidades-texto button:hover {
+    background-color: var(--preto);
+    color: var(--branco);
+
+}
+
+.modalidades-imagem img {
+    scale: 1;
+    opacity: 0.8;
+    transition: all 1s ease;
+    width: 400px;
+
+}
+
+.modalidades-imagem img:hover {
+    opacity: 1;
+    scale: 1.1;
+
+}
+
+#modalidade1 {
+    background: linear-gradient(to right, var(--modalidade6), var(--modalidade2));
+    color: var(--fontemodalidade1);
+}
+
+#modalidade2 {
+    background: linear-gradient(to right, var(--modalidade2), var(--modalidade1));
+    color: var(--fontemodalidade2);
+}
+
+#modalidade3 {
+    background: linear-gradient(to right, var(--modalidade4), var(--modalidade3));
+    color: var(--fontemodalidade3);
+}
+
+#modalidade4 {
+    background: linear-gradient(to right, var(--modalidade3), var(--modalidade4));
+    color: var(--fontemodalidade4);
+}
+
+#modalidade5 {
+    background: linear-gradient(to right, var(--modalidade6), var(--modalidade5));
+    color: var(--fontemodalidade5);
+}
+
+#modalidade6 {
+    background: linear-gradient(to right, var(--modalidade5), var(--modalidade6));
+    color: var(--fontemodalidade6)
+}
